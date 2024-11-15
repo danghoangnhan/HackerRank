@@ -1,0 +1,5 @@
+n = int(input())
+x = sorted(map(int, input().split()))
+print(f"{sum(x)/n:.1f}")
+print(f"{(x[n//2] + x[(n-1)//2])/2:.1f}")
+print(min(sorted(x, key=x.count)[-1::-1]))
